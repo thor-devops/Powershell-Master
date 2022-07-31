@@ -1,5 +1,11 @@
-This page talks about improve your Powershell profile and tools by Oh-my-Posh.
+#This repository has the purpose of installing and configuring Oh-my-posh making its powershell more powerful and practical for the development and practices of devops.
 
-This configuration transform your Powershell 7 this:
+The first step is to access the Oh-My-Posh folder and run the commands from the Oh-my-posh-master-tools.md file
+
+Then paste the $profile configuration into your $profile file created in step five
+
+After saving the profile file, you will have to edit the Windows Terminal settings.json file, for that just click on the + settings icon and then on json settings (I recommend vscode to edit) and paste the file located in Windows Terminal Config.
+
+After closing and opening your terminal it will look like this:
 
 ![image](https://user-images.githubusercontent.com/90980333/182039821-19aeb61e-efb1-41c7-b9ef-70e9952a2a3d.png)

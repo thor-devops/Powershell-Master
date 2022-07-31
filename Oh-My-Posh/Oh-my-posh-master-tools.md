@@ -34,44 +34,4 @@ Copy-Item -Path pwsh10k.omp.json -Destination $HOME
 
 New-item -type file -force $profile
 notepad $profile
-
-# Six Step - Paste this line in new profile:
-
-# Powershell default profile for Poweruser
-Import-Module posh-git
-Import-Module oh-my-posh
-#Import-Module Az.Tools.Predictor
-Set-PoshPrompt -Theme  ~/pwsh10k.omp.json
-
-# Autocomplete, keybinds and history
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-Set-PSReadlineOption -HistorySearchCursorMovesToEnd
-
-# Autosuggestions for PSReadline
-Set-PSReadlineOption -ShowToolTips
-Set-PSReadlineOption -PredictionSource History
-
-# Terminal-Icons
-Import-Module Terminal-Icons
-
-# Fzf
-Import-Module PSFzf
-Set-PsFzfOption -PSReadLineChordProvider 'Ctrl+f' -PSReadLineChordReverseHistory 'Ctrl+r'
-
-# Alias (Optional)
-Set-Alias vim nvim
-Set-Alias g git
-Set-Alias ll ls
-Set-Alias grep findstr
-Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
-Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
-
-# Ultilities (Optional)
-function which ($command) {
-    Get-Command -Name $command -ErrorAction SilentlyContinue |
-        Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-}
-
-clear
+copy and paste profile.
