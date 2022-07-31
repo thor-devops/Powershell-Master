@@ -1,3 +1,9 @@
+# Download Gow from Github (Very Important):
+https://github.com/bmatzelle/gow
+
+# Install Powerlevel10k Meslo Fonts (Optional):
+https://github.com/romkatv/powerlevel10k#fonts
+
 # First Step - Use default usar (non admin) Powershell 7:
 
 iwr -useb get.scoop.sh | iex
